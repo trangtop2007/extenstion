@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Exasdtensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "image.jpg"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["/index.css"],
+        "js":["/hello.js"]
+      }
+    ]
+}
